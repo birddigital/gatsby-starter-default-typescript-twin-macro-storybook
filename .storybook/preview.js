@@ -1,4 +1,5 @@
 import { withGlobalStyles } from "./custom-decorators"
+import { customViewports } from "./custom-viewports"
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
@@ -8,6 +9,8 @@ export const parameters = {
       date: /Date$/,
     },
   },
+  viewport: {
+    viewports: customViewports,
+  },
 }
-
 export const decorators = [withGlobalStyles]
